@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style9.css">
+    <title>Details.Hikkudawa turtle hatchery</title>
+</head>
+<body>
+    
+
+
+
+    <header class="header">
+        <a href="main1.html"> 
+            <img src="image2.jpeg" alt="turtlelogo" class="image2"></a>
+        <h1>DETAILS PAGE</h1>
+    </header>
+
+
+   
+        <fieldset>
+
+<hr>
+<hr>
+ <br>
+ <br>
+ <br>
+ <h2>Enter your details:</h2>
+
+<form id="formdetail">
+
+
+
+ <div id="sec">
+    <label for="name">Full Name:</label> 
+    <input type="text" id="name" name="fname" required>
+</div>
+
+
+
+<div id="sec">
+    <label for="Mobile">Mobile Number:</label> 
+    <select id="mobileNumber" name="mobileNumber">
+        <option value="">Select Country</option>
+        <option value="+91">🇮🇳 India</option>
+        <option value="+94">🇱🇰 Sri-lanka</option>
+        <option value="+1">🇺🇸 United States</option>
+        <option value="+65">🇸🇬 Singapore</option>
+        <option value="+86">🇨🇳 China</option>
+        <option value="+44">🇬🇧 United Kingdom</option>
+      </select>
+      <br>
+      
+</div>
+<input type="tel" id="mobileNumber2" name="mobileNumber" placeholder="+94 123456789"  required>
+<br>
+
+
+<div id="sec">
+    <label for="email">Email:</label> 
+   <input type="email" id="email" name="email"  placeholder="---@gmail.com" required>
+</div>
+
+
+
+<div id="sec">
+    <label for="cemail">Confirm Email:</label> 
+    <input type="text" id="cemail" name="cemail" required>
+</div>
+
+
+
+<div id="sec">
+    <label for="gender">Gender:</label>
+
+    <select name="gender" id="gender" >
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="notspecified">Not specified</option>
+    </select>
+</div>
+<button type="submit" value="Submit" id="Dsubmit" >Submit</button>
+
+</form>
+
+
+ 
+
+
+
+<section>
+    <h2>Summary table</h2>
+    <table border="1" id="summarytable">
+        <tr>
+            <td>Date:</td>
+            <td id="Date"></td>
+        </tr>
+        <tr>
+            <td>Duration:</td>
+            <td id="Duration"></td>
+        </tr>
+    
+        <tr>
+            <td>Foreigner Adult:</td>
+            <td id="ForeignerAdult"> </td>
+        </tr>
+    
+        <tr>
+            <td>Foreigner Child:</td>
+            <td id="ForeignerChild"></td>
+        </tr>
+    
+        <tr>
+            <td>SL Adult</td>
+            <td id="SLAdult"></td> 
+        </tr>
+    
+        <tr>
+            <td>SL Child:</td>
+            <td id="SLChild"></td>
+        </tr>
+    
+        <tr>
+            <td>Infant:</td>
+            <td id="Infant">FREE</td>
+        </tr>
+    
+        <tr>
+            <td>Total Payable:</td>
+            <td id="TotalPayable"></td>
+        </tr>
+        
+    
+    </table>
+</section>    
+
+
+<a href="index3.html" id="continueP" >Continue with Purchase</a>
+<br>
+<br>
+<hr>
+<hr>
+
+</fieldset>
+
+
+ 
+
+
+
+    <script >
+
+
+
+
+/*getting stored values from the local storage and displaying them on the table */
+let myData1 = localStorage.getItem("date");
+    document.getElementById("Date").innerText = myData1; 
+
+let myData2 = localStorage.getItem("time"); 
+    document.getElementById("Duration").innerText = myData2; 
+
+let myData3 = localStorage.getItem("fadult"); 
+    document.getElementById("ForeignerAdult").innerText ="$"+myData3; 
+ 
+let myData4 = localStorage.getItem("fchild");
+    document.getElementById("ForeignerChild").innerText ="$"+ myData4; 
+ 
+let myData5 = localStorage.getItem("sladult");   
+    document.getElementById("SLAdult").innerText ="$"+ myData5; 
+
+let myData6  = localStorage.getItem("slchild");
+    document.getElementById("SLChild").innerText ="$"+ myData6;     
+
+let myData7  = localStorage.getItem("total");
+    document.getElementById("TotalPayable").innerText ="$"+ myData7; 
+
+
+
+
+
+       /*setting up referencess*/
+const jsformdetail = document.getElementById("formdetail");
+const jsname = document.getElementById("name");
+const jsmobile = document.getElementById("mobileNumber2");
+const jsemail = document.getElementById("email");
+const jscemail = document.getElementById("cemail");
+const jsgender = document.getElementById("gender");
+
+const jsbutton = document.getElementById("Dsubmit");
+
+
+/*adding event listener to the submit button*/
+jsbutton.addEventListener("click", loadval2);
+
+function loadval2(event) {
+
+    if (jsformdetail.checkValidity()) {
+        event.preventDefault(); //prevent the form being submitted if its valid
+          }
+
+          /*getting the input value of each input field and storing it in a variable*/
+    let fullname = jsname.value;
+    let mobilenumber = jsmobile.value;
+    let email = jsemail.value;
+    let connfirmemail = jscemail.value;
+    let gender = jsgender.value;
+    
+    /*loading the input values in the local storage*/
+    localStorage.setItem("namefull", fullname);
+    localStorage.setItem("mobilenumber", mobilenumber);
+    localStorage.setItem("email", email);
+    localStorage.setItem("confirmemail", connfirmemail);
+    localStorage.setItem("gender", gender);
+
+
+
+}
+
+
+    </script>
+</body>
+</html>

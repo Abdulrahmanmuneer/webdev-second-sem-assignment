@@ -1,0 +1,56 @@
+
+/*coverpage start*/
+.container {
+    position: relative;
+    text-align: center;
+    
+    background-size: cover;
+  }
+ img{
+  max-width: 100%;
+  height: auto;
+ }
+  .text1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: oblique;
+    font-size: 30px;
+    text-shadow: 2px 2px #0e0701, 2px 2px #0e0701;
+    
+    color:#ddcbaa;
+  }
+  .text2 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 20px;
+  }
+  a:link, a:visited {
+    background-color:#4B0082;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color:#800000;
+  }
+  .link1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*coverpage end*/
+
+
+
+
+
+
+
+ 

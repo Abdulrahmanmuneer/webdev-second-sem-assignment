@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style8.css">
+    <title>Tickets page.Hikkudawa turtle hatchery</title>
+</head>
+
+
+<body>
+
+    <header class="header">
+       
+        <a href="main1.html"> 
+            <img src="image2.jpeg" alt="turtlelogo" class="image2"></a>
+        <h1>TICKETS PAGE</h1>
+    </header>
+ 
+
+
+    
+    
+    <fieldset>
+
+
+    <section class="dates">
+            <h2>Date:</h2>
+            <div class="calendar">
+              <input type="date" id="dat" name="dat" placeholder="Select a date"  required>
+            </div>
+     </section>
+ 
+
+<br>
+<hr>
+<hr>
+
+
+<div>
+    <h2>Pricing table:</h2>
+    <table  border="1" id="pricingtable" >
+    <tr>
+        <th >Categories</th>
+        <th>Charge per hour:</th>
+    </tr>
+    <tr>
+        <td>Foreigner Adult</td>
+        <td>10 USD</td>
+    </tr>
+    <tr>
+        <td>Foreigner Child</td>
+        <td>5 USD</td>
+    </tr>
+    <tr>
+        <td>SL Adult</td>
+        <td>4 USD</td>
+    </tr>
+    <tr>
+        <td>SL Child</td>
+        <td>2 USD</td>
+    </tr>
+    <tr><td>Infant (SL or Foreigner) (under 4 years)</td>
+        <td>Free</td>
+    </tr>
+    </table>
+</div>
+
+<br>
+<br>
+<hr>
+<hr>
+
+
+
+
+
+    <div>
+    <h2>Guests:</h2>
+      <form id="form1">
+       
+            <div>
+            <label for="sladult">SL Adult:</label> 
+             <input type="number" id="sladult" name="sladult" min=0 value=0 required>
+            </div>
+
+             <br>
+
+             <div>
+             <label for="slchild">SL Chlid:</label> 
+             <input type="number" id="slchild" name="slchild" min=0  value=0 required>
+             </div>
+
+             <br>
+
+             <div>
+             <label for="fadult">Foriegn Adult:</label> 
+             <input type="number" id="fadult" name="fadult" min=0 value=0 required>
+             </div>
+
+             <br>
+
+             <div>
+             <label for="fchild">Foriegn Chlid:</label> 
+             <input type="number" id="fchild" name="fchild" min=0  value=0 required>
+            </div>
+
+             <br>
+
+             <div>
+             <label for="infant">Infant:</label> 
+             <input type="number" id="infant" name="infant" min=0 value=0 required>
+            </div>
+
+             <br>
+             <br>
+           
+         
+      </form>
+    </div>
+
+
+
+
+
+<hr>
+<hr>
+
+
+
+
+
+   <div>
+      <h2>Duration:</h2>
+      <p>Choose timings:</p>
+      <div  id="form2">
+
+        <select name="time" id="time" multiple>
+            <option value="7am-8am">7am-8am</option>
+            <option value="8am-9am">8am-9am</option>
+            <option value="9am-10am">9am-10am</option>
+            <option value="10am-11am">10am-11am (peak)</option>
+            <option value="11am-12pm">11am-12pm(peak)</option>
+            <option value="12pm-1pm">12pm-1pm(peak)</option>
+            <option value="1pm-2pm">1pm-2pm</option>
+            <option value="2pm-3pm">2pm-3pm</option>
+            <option value="3pm-4pm">3pm-4pm(peak)</option>
+            <option value="4pm-5pm">4pm-5pm(peak)</option>
+            <option value="5pm-6pm">5pm-6pm(peak)</option>
+        </select>   
+      </div> 
+            <br>
+            <br>
+       
+            <button type="submit" id="guestsubmit" name="submit">Submit</button>
+        
+        <br>
+       
+    </div>  
+        <br>
+    
+
+
+    
+    <hr>
+    <hr>
+
+
+
+
+<div>
+    <h2>Summary table</h2>
+<table border="1" id="summarytable">
+    <tr>
+        <td>Date:</td>
+        <td  id="Date"></td>
+    </tr>
+    <tr>
+        <td>Duration:</td>
+        <td id="Duration"></td>
+    </tr>
+
+    <tr>
+        <td>Foreigner Adult:</td>
+        <td id="ForeignerAdult"></td>
+    </tr>
+
+    <tr>
+        <td>Foreigner Child:</td>
+        <td id="ForeignerChild"></td>
+    </tr>
+
+    <tr>
+        <td>SL Adult</td>
+        <td id="SLAdult"></td> 
+    </tr>
+
+    <tr>
+        <td>SL Child:</td>
+        <td id="SLChild"></td>
+    </tr>
+
+    <tr>
+        <td>Infant:</td>
+        <td id="Infant">FREE</td>
+    </tr>
+
+    <tr>
+        <td>Total Payable:</td>
+        <td id="TotalPayable"></td>
+    </tr>
+    
+
+    </table>
+  
+    
+</div>
+<br>
+<br>
+<a href="index2.html" id="continueP">Continue with Purchase</a>
+<br>
+<br>
+<hr>
+<hr>
+<br>
+<br>
+
+
+
+</fieldset>
+
+
+
+
+
+   <script >
+
+
+
+//setting up references
+const jsform2 = document.getElementById("form2");
+const jstime = document.getElementById("time");
+const jsdat = document.getElementById("dat");
+
+const jsform1 = document.getElementById("form1");
+const jssladult = document.getElementById("sladult");
+
+const jsslchild = document.getElementById("slchild");
+const jsfadult = document.getElementById("fadult");
+const jsfchild = document.getElementById("fchild");
+
+const jsinfant = document.getElementById("infant");
+const jsguestsubmit = document.getElementById("guestsubmit");
+
+
+const jscontinuepurchase = document.getElementById("continueP");
+
+
+
+
+
+//adding event listener to submit button
+jsguestsubmit.addEventListener("click", loadval1);
+
+//event handler
+function loadval1(event) {
+
+    //prevent the form being submitted if its valid
+if (jsform1.checkValidity()) {
+    event.preventDefault(); 
+      }
+     
+      /*getting the input value of each input field and storing it in a variable*/
+       /*calculating the price*/
+
+       let date = jsdat.value
+       let time = jstime.value
+      let sladult = (jssladult.value)*4;
+      let slchild = (jsslchild.value)*2;
+      let fadult = (jsfadult.value)*10;
+      let fchild= (jsfchild.value)*5;
+      let infant = (jsinfant.value);
+      
+      let tot = sladult+slchild+fadult+fchild;
+
+
+       /*loading the input values in the local storage*/
+    localStorage.setItem("date" , date)   
+    localStorage.setItem("time" , time)
+    localStorage.setItem("sladult", sladult);
+    localStorage.setItem("slchild", slchild);
+    localStorage.setItem("fadult", fadult);
+    localStorage.setItem("fchild", fchild);
+    localStorage.setItem("infant", infant);
+    localStorage.setItem("total", tot);
+
+      /*displaying the value of the sum on the summary table*/
+    document.getElementById("Date").innerText = date; 
+    document.getElementById("Duration").innerText = time;
+    document.getElementById("ForeignerAdult").innerText = "$"+fadult;
+    document.getElementById("ForeignerChild").innerHTML = "$"+fchild;
+    document.getElementById("SLAdult").innerHTML = "$"+sladult;
+    document.getElementById("SLChild").innerText = "$"+slchild;
+    document.getElementById("TotalPayable").innerHTML = "$"+tot;
+    /*used both innerText and innerHtml here to prove both works*/
+
+    }
+
+
+   </script>
+
+
+</body>
+
+</html>

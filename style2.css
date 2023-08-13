@@ -1,0 +1,210 @@
+/*header start*/
+ 
+  
+.ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #286d77;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-blockblock;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.top) {
+    background-color: #622d58;
+    
+  }
+  
+  .top {
+    background-color: #80be0e;
+  }
+  
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #622d58;;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #286d77;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .image2 {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0px;
+  }
+  
+  
+  body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/4/9/2/118594-top-aesthetic-tumblr-backgrounds-black-1920x1080-free-download.jpg");
+    color: white;
+ }
+   /*header end*/
+
+
+
+h1
+   {
+    text-align: center;
+    text-shadow: 2px 2px #ff9d00;
+    font-size: 40px;
+    margin: 10px;
+   }
+
+.par1{
+  font-family:Courier 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: 50px;
+}
+.greent{
+  float: right;
+  height: 300px;
+  width:500px;
+  margin-right:50px;
+}
+.bmap1{
+width:60%;
+height: 450px;
+margin-left:50px;
+}
+
+.loggert{
+  float: left;
+  height: 300px;
+  width:500px;
+  margin: 50px;
+}
+.bmap2{
+  width:40%;
+  height: 300px;
+  
+}
+.olivet{
+  float: right;
+  height: 300px;
+  width:500px;
+  margin-right:50px;
+}
+
+.bmap3{
+  width:800px;
+  height:400px;
+  margin-left: 50px;
+}
+caption{
+  text-align: left;
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+th {
+  height: 70px;
+}
+#bro{
+  height: 70px;
+}
+th{
+  font-size: 25px;
+}
+td{
+  text-align: center;
+  font-size: 20px;
+}
+table, td, th {
+  border: 5px solid rgb(159, 167, 180);
+}
+h2{
+  text-align: center;
+}
+#mt{
+  background-color: rgb(34, 4, 61);
+}
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    /*footer start*/
+
+
+  #fot1 {
+    background-color: #286d77;
+    text-align: center;
+    padding: 10px;
+  }
+  #fot1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #286d77;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+/*footer end*/

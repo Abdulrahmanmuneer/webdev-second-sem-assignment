@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style10.css">
+    <title>Payment page.Hikkudawa turtle hatchery</title>
+</head>
+<body>
+    <header class="header">
+        
+        <a href="main1.html"> 
+            <img src="image2.jpeg" alt="turtlelogo" class="image2"></a>
+        
+        <h1>PAYMENT PAGE</h1>
+    </header>
+
+<fieldset>
+
+    <hr>
+    <hr>
+    <br>
+    <br>
+<h2>
+    Payment Details:
+</h2>
+<form id="form5">
+
+
+        <div id="sec">
+            <label for="cardnum">Credit card number::</label> 
+            <input type="number" id="cardnum" name="cardnum" placeholder="123-45-678"required>
+        </div>
+
+
+        <div id="sec">
+            <label for="exp">Expiry date:</label> 
+            <input type="date" id="exp" name="exp"  required>
+        </div>
+
+        <div id="sec">
+            <label for="cvc">CVC/CVV:</label> 
+            <input type="number" id="cvc" name="cvc"  placeholder="xxx" required>
+        </div>
+
+        <div id="sec">
+             <label for="cardname">Name on Card:</label> 
+            <input type="text" id="cardname" name="cardname" required>
+        </div>
+
+        <button type="submit" id="paymentsubmit" name="submit">Submit</button>
+
+</form>
+
+<div>
+    <h2>Summary table</h2>
+<table border="1" id="summarytable">
+    <tr>
+        <td>Date:</td>
+        <td id="Date"></td>
+    </tr>
+    <tr>
+        <td>Duration:</td>
+        <td id="Duration"></td>
+    </tr>
+
+    <tr>
+        <td>Foreigner Adult:</td>
+        <td id="ForeignerAdult"></td>
+    </tr>
+
+    <tr>
+        <td>Foreigner Child:</td>
+        <td id="ForeignerChild"></td>
+    </tr>
+
+    <tr>
+        <td>SL Adult</td>
+        <td id="SLAdult"></td> 
+    </tr>
+
+    <tr>
+        <td>SL Child:</td>
+        <td id="SLChild"></td>
+    </tr>
+
+    <tr>
+        <td>Infant:</td>
+        <td id="Infant">FREE</td>
+    </tr>
+
+    <tr>
+        <td>Total Payable:</td>
+        <td id="TotalPayable"></td>
+    </tr>
+    
+
+    </table>
+  
+
+</div>
+<br>
+<br>
+<a href="index4.html" id="continueP2">PAY amount:</a>
+<br>
+<br>
+
+
+<hr>
+<hr>
+</fieldset>
+
+
+
+
+<script>
+
+
+/*getting stored values from the local storage and displaying them on the table */
+let myData1 = localStorage.getItem("date");
+    document.getElementById("Date").innerText = myData1; 
+
+let myData2 = localStorage.getItem("time"); 
+    document.getElementById("Duration").innerText = myData2; 
+
+let myData3 = localStorage.getItem("fadult"); 
+    document.getElementById("ForeignerAdult").innerText ="$"+myData3; 
+ 
+let myData4 = localStorage.getItem("fchild");
+    document.getElementById("ForeignerChild").innerText ="$"+ myData4; 
+ 
+let myData5 = localStorage.getItem("sladult");   
+    document.getElementById("SLAdult").innerText ="$"+ myData5; 
+
+let myData6  = localStorage.getItem("slchild");
+    document.getElementById("SLChild").innerText ="$"+ myData6;     
+
+let myData7  = localStorage.getItem("total");
+    document.getElementById("TotalPayable").innerText ="$"+ myData7; 
+
+
+
+
+
+
+
+
+   const jsform5 = document.getElementById("form5");
+   const jscardnum = document.getElementById("cardnum");
+   const jsexp = document.getElementById("exp");
+   const jscvc = document.getElementById("cvc");
+   const jscardname = document.getElementById("cardname");
+   const jspaymentsubmit = document.getElementById("paymentsubmit");
+
+
+   jspaymentsubmit.addEventListener("click" , loadval3);
+   
+   function loadval3(event){
+
+    if (jsform5.checkValidity()) {
+        event.preventDefault(); //prevent the form being submitted if its valid
+          }
+
+    
+    let cardnum = jscardnum.value;
+    let exp = jsexp.value;
+    let cvc = jscvc.value;
+    let cardname = jscardname.value;
+
+
+    localStorage.setItem("cardnum", cardnum);
+    localStorage.setItem("exp", exp);
+    localStorage.setItem("cvc", cvc);
+    localStorage.setItem("cardname", cardname);
+
+
+
+   }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

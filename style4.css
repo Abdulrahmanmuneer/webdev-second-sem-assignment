@@ -1,0 +1,182 @@
+/*header start*/
+ 
+  
+.ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #286d77;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-blockblock;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.top) {
+    background-color: #622d58;
+    
+  }
+  
+  .top {
+    background-color: #80be0e;
+  }
+  
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #622d58;;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #286d77;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .image2 {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0px;
+  }
+  
+  
+  body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/4/9/2/118594-top-aesthetic-tumblr-backgrounds-black-1920x1080-free-download.jpg");
+    color: white;
+  }
+   /*header end*/
+  
+
+   
+h1{
+  text-align: center;
+    text-shadow: 2px 2px #ff7e05;
+    font-size: 35px;
+}
+.threatimage1{
+  width: 550px;
+  height: 300px;
+  float: right;
+  margin-right: 50px;
+}
+
+
+p{
+  font-family:Courier 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: 50px;
+}
+
+.link {
+  background-color: rgb(20, 46, 96);
+  color: rgb(251, 247, 247);
+  font-size: 20px;
+  border: 2px solid rgb(7, 1, 16);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link:hover, link:active {
+  background-color: rgb(84, 92, 126);
+  color: rgb(248, 246, 246);
+}
+
+.link {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.threatimage2{
+  float: left;
+  width: 700px;
+  height: 400px;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.threatimage3{
+  float: right;
+  margin-right: 50px;
+  width:550px;
+  height:350px;
+
+}
+.hrr{
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.htt{
+ float: none;
+ font-size:25px;
+}
+   
+
+
+
+
+
+
+
+   /*footer start*/
+
+
+  #fot1 {
+    background-color: #286d77;
+    text-align: center;
+    padding: 10px;
+  }
+  #fot1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #286d77;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+/*footer end*/

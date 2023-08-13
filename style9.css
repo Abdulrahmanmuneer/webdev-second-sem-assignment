@@ -1,0 +1,99 @@
+/*header starts*/
+.image2 {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 0px;
+  }
+  body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/4/9/2/118594-top-aesthetic-tumblr-backgrounds-black-1920x1080-free-download.jpg");
+
+  }
+  
+  .header{
+    height: 80px;
+    border: 2px solid rgb(10, 2, 18);
+    background-color: #37197d;
+    
+  }
+  h1{
+    text-align: center;
+    text-shadow: 2px 2px #8b1986;
+    font-size: 40px;
+    margin:0px;
+    color: aliceblue;
+    
+  }
+  
+  div{
+    color: aliceblue;
+  }
+
+  /*header ends*/
+
+  #summarytable{
+    float: left;
+    border: 0px solid whitesmoke;
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 70px;
+      
+  }
+
+
+  #Dsubmit{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 40px;
+  }
+  #continueP{
+    background-color: #269843;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 300px;
+ 
+   
+   
+  }
+
+  label {  
+    width: 300px;
+    display: inline-block;
+   
+    }
+#sec{
+    display: flex;
+    justify-content: center;
+
+}
+h2{
+  color: beige;
+  margin-bottom: 20px;
+}
+
+
+td{
+  color: white;
+}
+
+
+fieldset {
+ 
+  margin: auto; /*to align the fieldset                 
+  in center*/
+  width: 60%; 
+
+  background-image: url( https://tse4.mm.bing.net/th?id=OIP.rooUaT6ZSFbpbSB3jknc2gHaEo&pid=Api&P=0&h=220);
+  border-color: rgb(11, 2, 32);
+  }
+
+  #mobileNumber2{
+    margin-left: 510px;
+  }

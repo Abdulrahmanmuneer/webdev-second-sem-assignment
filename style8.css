@@ -1,0 +1,138 @@
+
+/*header starts*/
+.image2 {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 0px;
+  }
+  body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/4/9/2/118594-top-aesthetic-tumblr-backgrounds-black-1920x1080-free-download.jpg");
+
+  }
+  
+  .header{
+    height: 80px;
+    border: 2px solid rgb(10, 2, 18);
+    background-color: #37197d;
+    
+  }
+  h1{
+    text-align: center;
+    text-shadow: 2px 2px #8b1986;
+    font-size: 40px;
+    margin:0px;
+    color: aliceblue;
+    
+  }
+  
+  div{
+    color: aliceblue;
+  }
+
+  /*header ends*/
+
+
+  h2{
+    text-align: left;
+   margin: 30px;
+   color: azure;
+  }
+  .calendar{
+    display: flex;
+    justify-content: center;
+   
+    padding: 10px
+  }
+  
+  label {  
+    width: 100px;
+    display: inline-block;
+   
+    }
+    
+    #form1 input{
+      display: flex;
+      justify-content: center;
+    margin-bottom: 10px;
+    width: 300px;
+    }
+     #form1 div{
+      display: flex;
+      justify-content: center;
+
+
+     }
+    
+
+
+
+  #guestsubmit{
+    margin-left: 50px;
+    margin-bottom: 60px;
+    width: 100px;
+  }
+
+  #form2{
+    
+    display: flex;
+    
+      justify-content: center;
+      height:100px
+      
+
+  }
+
+  #durationsubmit{
+    width: 100px;
+    margin-left:50px ;
+  }
+  #pricingtable{
+    border: 0px solid whitesmoke;
+    width: 700px;
+    height:200px;
+    margin-left: 50px;
+    
+  }
+
+  
+  
+
+  #summarytable {
+   
+    border: 0px solid whitesmoke;
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+   margin-left: 200px;
+ 
+  }
+ 
+  #finalsubmit{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+  } 
+  #continueP{
+    background-color: #269843;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 280px;
+  margin-top: 50px;
+   
+  }
+
+  fieldset {
+    
+    margin: auto; /*to align the fieldset                 
+                  in center*/
+     width: 60%; 
+
+     
+    background-image: url( https://tse4.mm.bing.net/th?id=OIP.rooUaT6ZSFbpbSB3jknc2gHaEo&pid=Api&P=0&h=220);
+    border-color: rgb(4, 7, 7);
+    }
+

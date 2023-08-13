@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style11.css">
+    <title>Confirmation page.Hikkudawa turtle hatchery</title>
+</head>
+<body>
+    <header class="header">
+      
+        <a href="main1.html"> 
+            <img src="image2.jpeg" alt="turtlelogo" class="image2"></a>
+       
+        <h1>CONFIRMATION PAGE</h1>
+    </header>
+
+    <fieldset>
+        <hr>
+        <hr>
+        <br>
+ <h2>Confirmation:</h2>
+ <p>Thank you for your order.
+    <br>You can show this confirmation at the entrance.
+   <br>
+   <br> Following is the summary of your order:</p>
+
+    <div>
+        
+    <table border="1" id="summarytable">
+        <tr>
+            <td>Name</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td id="Date"></td>
+        </tr>
+    
+        <tr>
+            <td>Time</td>
+            <td id="time"></td>
+        </tr>
+    
+        <tr>
+            <td>Mobile</td>
+            <td id="Mobile"></td>
+        </tr>
+    
+        <tr>
+            <th>TICKETS:</th>
+            <th >CHARGES:</th> 
+        </tr>
+    
+        <tr>
+            <td>SL Adult</td>
+            <td id="SLadult"></td>
+        </tr>
+    
+        <tr>
+            <td>SL Child</td>
+            <td id="SLchild"></td>
+        </tr>
+
+       
+        <tr>
+            <td>Foriegn Adult</td>
+            <td id="fadult"></td>
+        </tr>
+
+        <tr>
+            <td>Foriegn Child</td>
+            <td id="fchild"></td>
+        </tr>
+    
+        <tr>
+            <td>Infant</td>
+            <td >FREE</td>
+        </tr>
+        
+        <tr>
+            <td>Total Payable:</td>
+        <td id="TotalPayable"></td>
+        </tr>
+    
+        </table>
+       
+       
+      
+    </fieldset>
+    <script>
+
+
+
+
+let myData1 = localStorage.getItem("namefull");
+    document.getElementById("name").innerText = myData1; 
+
+let myData2 = localStorage.getItem("date"); 
+    document.getElementById("Date").innerText = myData2; 
+
+let myData3 = localStorage.getItem("time"); 
+    document.getElementById("time").innerText =myData3; 
+
+ let myData4 = localStorage.getItem("mobilenumber");
+    document.getElementById("Mobile").innerText =myData4; 
+
+let myData5 = localStorage.getItem("sladult");   
+    document.getElementById("SLadult").innerText ="$"+ myData5;    
+ 
+let myData6  = localStorage.getItem("slchild");
+    document.getElementById("SLchild").innerText ="$"+ myData6; 
+   
+ let myData7 = localStorage.getItem("fadult"); 
+    document.getElementById("fadult").innerText ="$"+myData7; 
+
+let myData8 = localStorage.getItem("fchild");
+    document.getElementById("fchild").innerText ="$"+ myData8; 
+
+let myData9  = localStorage.getItem("total");
+    document.getElementById("TotalPayable").innerText ="$"+ myData9; 
+ 
+ 
+    </script>
+</body>
+</html>
